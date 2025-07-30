@@ -31,7 +31,7 @@ function Drawer ({ onClose, onRemove, items = []}) {
           
           {
             items.length > 0 ? (
-              <div className="d-flex flex-column">
+              <div className="hleb-voda d-flex flex-column ">
                 <div className="items"> 
             {items.map((obj) => (
           <div key={obj.id} className="cartItem d-flex align-center mr-15">
@@ -44,21 +44,21 @@ function Drawer ({ onClose, onRemove, items = []}) {
           </div>
             ))}
           </div>
-          <div>
-              <ul className="cartTotalBlock">
-                <li>
-                  <span>Итого:</span>
-                  <div></div>
-                  <b>21 498 руб.</b>
-                </li>
-                <li>
-                  <span>Налог 5%:</span>
-                  <div></div>
-                  <b>1074 руб.</b>
-                </li>
-              </ul>
-              <button onClick={onClickOrder} className="btn">Оформить заказ<img src="/img/sneakers/arrow.svg" alt="Arrow"></img></button>
-            </div>
+              <div>
+                  <ul className="cartTotalBlock">
+                    <li>
+                      <span>Итого:</span>
+                      <div></div>
+                      <b>21 498 руб.</b>
+                    </li>
+                    <li>
+                      <span>Налог 5%:</span>
+                      <div></div>
+                      <b>1074 руб.</b>
+                    </li>
+                  </ul>
+                  <button onClick={onClickOrder} className="btn">Оформить заказ<img src="/img/sneakers/arrow.svg" alt="Arrow"></img></button>
+                </div>
               </div>
             ):
               <Info title={isOrderComplete ? "Заказ оформлен!" : "Корзина пустая"} 

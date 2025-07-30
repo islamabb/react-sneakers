@@ -197,3 +197,13 @@ body,html {
     background: darken($color: #9dd558, $amount: 5%);
   }
 }
+
+.hleb-voda{
+  height: 100%;
+  justify-content: space-between;
+
+  .items{
+    flex: 1;
+    overflow: auto;
+  }
+}
